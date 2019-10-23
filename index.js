@@ -45,3 +45,5 @@ app.db.setup(app.config.isDevelopment, app.config.isDevelopment);
 server.listen(app.config.port, () => {
   log.info('Started server on port %d.', app.config.port);
 });
+
+module.exports = { server };
