@@ -43,6 +43,7 @@
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
+    "faker": "^4.1.0",
     "jest": "^24.8.0",
     "mocha": "^6.2.2",
     "nodemon": "^1.19.1"
