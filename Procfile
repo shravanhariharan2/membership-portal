@@ -1,2 +1,2 @@
 release: npm run db:migrate
-web: npm start
+web: api start

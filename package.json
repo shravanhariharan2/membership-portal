@@ -12,7 +12,8 @@
     "db:rollback": "sequelize db:migrate:undo",
     "db:seed": "sequelize db:seed:all",
     "db:unseed": "sequelize db:seed:undo:all",
-    "test": "jest --config jest.config.json"
+    "test": "jest --config jest.config.json",
+    "postinstall": "npm install -g @useoptic/cli"
   },
   "repository": {
     "type": "git",

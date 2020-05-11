@@ -5,7 +5,7 @@ if (isDevelopment) require('dotenv').config();
 module.exports = {
   isDevelopment,
 
-  port: process.env.PORT || 3000,
+  port: process.env.OPTIC_API_PORT || process.env.PORT || 3000,
 
   logging: {
     level: 'info',

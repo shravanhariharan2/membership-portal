@@ -1,0 +1,7 @@
+name: membership-portal-testing
+tasks:
+  start:
+    command: npm start
+    baseUrl: http://localhost:3000
+ignoreRequests:
+- OPTIONS *
