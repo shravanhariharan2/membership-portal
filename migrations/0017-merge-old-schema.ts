@@ -75,7 +75,6 @@ export class MergeOldSchema1598743920351 implements MigrationInterface {
 
     await queryRunner.query('ALTER TABLE "OrderItems" ALTER COLUMN uuid SET NOT NULL');
     await queryRunner.query('ALTER TABLE "OrderItems" ALTER COLUMN fulfilled SET NOT NULL');
-    await queryRunner.query('ALTER TABLE "OrderItems" ALTER COLUMN "fulfilledAt" SET NOT NULL');
 
     /* Add defaults for NOT NULL columns */
     await queryRunner.query('ALTER TABLE "Users" ALTER COLUMN uuid SET DEFAULT uuid_generate_v4()');
@@ -191,7 +190,6 @@ export class MergeOldSchema1598743920351 implements MigrationInterface {
 
     await queryRunner.query('ALTER TABLE "OrderItems" ALTER COLUMN uuid DROP NOT NULL');
     await queryRunner.query('ALTER TABLE "OrderItems" ALTER COLUMN fulfilled DROP NOT NULL');
-    await queryRunner.query('ALTER TABLE "OrderItems" ALTER COLUMN "fulfilledAt" DROP NOT NULL');
 
     /* Remove defaults for NOT NULL columns */
     await queryRunner.query('ALTER TABLE "Users" ALTER COLUMN uuid DROP DEFAULT');
