@@ -68,7 +68,6 @@ export class MergeOldSchema1598743920351 implements MigrationInterface {
 
     await queryRunner.query('ALTER TABLE "Merchandise" ALTER COLUMN uuid SET NOT NULL');
     await queryRunner.query('ALTER TABLE "Merchandise" ALTER COLUMN quantity SET NOT NULL');
-    await queryRunner.query('ALTER TABLE "Merchandise" ALTER COLUMN picture SET NOT NULL');
     await queryRunner.query('ALTER TABLE "Merchandise" ALTER COLUMN "discountPercentage" SET NOT NULL');
     await queryRunner.query('ALTER TABLE "Merchandise" ALTER COLUMN "numSold" SET NOT NULL');
 
