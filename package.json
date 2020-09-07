@@ -2,10 +2,10 @@
   "name": "new-portal",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "tsc --skipLibCheck",
-    "start": "cd build && node index.js",
+    "start": "node build/index.js",
     "lint": "eslint ./ --ext .ts",
     "lint:fix": "eslint ./ --ext .ts --fix",
     "test": "jest --config jest.config.json",
