@@ -1,5 +1,5 @@
 import { EntityRepository } from 'typeorm';
-import { ActivityType, Uuid } from 'types';
+import { ActivityType, Uuid } from '../types';
 import { UserModel } from '../models/UserModel';
 import { ActivityModel } from '../models/ActivityModel';
 import { BaseRepository } from './BaseRepository';
