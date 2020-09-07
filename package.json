@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "tsc && node index.js",
+    "start": "cd build && node index.js",
     "lint": "eslint ./ --ext .ts",
     "lint:fix": "eslint ./ --ext .ts --fix",
     "test": "jest --config jest.config.json",
