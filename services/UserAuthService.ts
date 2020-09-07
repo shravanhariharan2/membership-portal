@@ -1,9 +1,9 @@
 import { Service } from 'typedi';
 import { ForbiddenError, NotFoundError, BadRequestError } from 'routing-controllers';
 import * as jwt from 'jsonwebtoken';
-import { UserRepository } from '../repositories/UserRepository';
 import { InjectManager } from 'typeorm-typedi-extensions';
 import { EntityManager } from 'typeorm';
+import { UserRepository } from '../repositories/UserRepository';
 import { Uuid, ActivityType, UserState } from '../types';
 import { Config } from '../config';
 import { UserModel } from '../models/UserModel';
