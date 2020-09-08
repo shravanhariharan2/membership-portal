@@ -46,7 +46,7 @@ const app = createExpressServer({
   },
 });
 
-app.listen(3000);
+app.listen(Config.port);
 
 /**
 
